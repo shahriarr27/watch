@@ -1,0 +1,483 @@
+$white: #ffffff;
+$semi-ash: #F8F9FB;
+$black: #181818;
+$blue-btn: #0F47C0;
+$black-btn: #1C2333;
+$text-color: #747474;
+
+
+@font-face {
+  font-family: Digital-7;
+  src: url(assets/fonts/digital-7.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 111, 197);
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+p {
+  margin: 0;
+  color: $text-color;
+}
+
+main{
+  min-height: 100vh;
+  width: 100%;
+  background: url(assets/images/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .main-wrapper{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    .watch{
+      .watch-img{
+        background: url(assets/images/Watch.png);
+        width: 300px;
+        height: 400px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+
+        //btn1
+        .btn1-pos{
+          position: absolute;
+          top: 90px;
+          right: 55px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          // background: rgba(0, 0, 0, 0.158);
+          transition: .5s;
+          cursor: pointer;
+          &:hover{
+            +.btn1{
+              visibility: visible;
+              opacity: 1;
+              z-index: 10;
+            }
+          }
+          .b1{
+            transform: rotate(-35deg);
+            width: 20px;
+            margin-left: 5px;
+            margin-top: -2px;
+            animation: flash 2s;
+            animation-delay: 2s;
+            transition: .5s;
+            opacity: 0;
+          }
+          
+        }
+        .btn1{
+          position: absolute;
+          top: 10px;
+          right: -118px;
+          width: 200px;
+          transition: .5s;
+          opacity: 0;
+          visibility: hidden;
+          &:hover{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        //btn2
+        .btn2-pos{
+          position: absolute;
+          top: 150px;
+          right: 25px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          // background: rgba(0, 0, 0, 0.178);
+          transition: .5s;
+          cursor: pointer;
+          &:hover{
+            +.btn2{
+              visibility: visible;
+              opacity: 1;
+              z-index: 10;
+            }
+          }
+          .b2{
+            transform: rotate(-0deg);
+            width: 60px;
+            margin-left: -1px;
+            margin-top: -10px;
+            animation: flash 2s;
+            animation-delay: 2s;
+            transition: .5s;
+            opacity: 0;
+          }
+        }
+        .btn2{
+          position: absolute;
+          top: 130px;
+          right: -160px;
+          width: 215px;
+          transition: .5s;
+          opacity: 0;
+          visibility: hidden;
+          &:hover{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        
+        //btn3
+        .btn3-pos{
+          position: absolute;
+          bottom: 155px;
+          right: 55px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          // background: rgba(0, 0, 0, 0.61);
+          transition: .5s;
+          cursor: pointer;
+          &:hover{
+            +.btn3{
+              visibility: visible;
+              opacity: 1;
+              z-index: 10;
+            }
+          }
+          .b3{
+            transform: rotate(35deg);
+            width: 20px;
+            margin-left: 5px;
+            margin-top: -0px;
+            animation: flash 2s;
+            animation-delay: 2s;
+            transition: .5s;
+            opacity: 0;
+          }
+        }
+        .btn3{
+          position: absolute;
+          bottom: 80px;
+          right: -118px;
+          width: 200px;
+          transition: .5s;
+          opacity: 0;
+          visibility: hidden;
+          &:hover{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        
+        //btn4
+        .btn4-pos{
+          position: absolute;
+          bottom: 155px;
+          left: 35px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          // background: rgba(0, 0, 0, 0.39);
+          transition: .5s;
+          cursor: pointer;
+          &:hover{
+            +.btn4{
+              visibility: visible;
+              opacity: 1;
+              z-index: 10;
+            }
+          }
+          .b4{
+            transform: rotate(-215deg);
+            width: 20px;
+            margin-left: -5px;
+            margin-top: -1px;
+            animation: flash 2s;
+            animation-delay: 2s;
+            transition: .5s;
+            opacity: 0;
+          }
+        }
+        .btn4{
+          position: absolute;
+          bottom: 77px;
+          left: -138px;
+          width: 200px;
+          transition: .5s;
+          opacity: 0;
+          visibility: hidden;
+          &:hover{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        
+        //btn5
+        .btn5-pos{
+          position: absolute;
+          top: 90px;
+          left: 35px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          // background: rgba(0, 0, 0, 0.158);
+          transition: .5s;
+          cursor: pointer;
+          &:hover{
+            +.btn5{
+              visibility: visible;
+              opacity: 1;
+              z-index: 10;
+            }
+          }
+          .b5{
+            transform: rotate(215deg);
+            width: 20px;
+            margin-left: -5px;
+            margin-top: -1px;
+            animation: flash 2s;
+            animation-delay: 2s;
+            transition: .5s;
+            opacity: 0;
+          }
+        }
+        .btn5{
+          position: absolute;
+          top: 5px;
+          left: -139px;
+          width: 200px;
+          transition: .5s;
+          opacity: 0;
+          visibility: hidden;
+          &:hover{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .countdown{
+      text-align: center;
+      margin-top: -30px;
+      #timer{
+        display: flex;
+        justify-content: center;
+        font-family: Digital-7;
+        font-size: 36px;
+        color: #DD0E36;
+        font-style: italic;
+        letter-spacing: 2px;
+        .dots{
+          margin: 0px 5px;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes flash {
+  10%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@media screen and(max-width:625px){
+  main{
+    overflow: hidden;
+    .main-wrapper{
+      .watch{
+        .watch-img{
+          background: url(assets/images/Watch.png);
+          width: 150px;
+          height: 300px;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-position: center center;
+          position: relative;
+          margin: 0;
+          //btn1
+          .btn1-pos{
+            position: absolute;
+            top: 75px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            .b1{
+              transform: rotate(-35deg);
+              width: 15px;
+              margin-left: 3px;
+              margin-top: 2px;
+              animation: flash 2s;
+              animation-delay: 2s;
+              transition: .5s;
+              opacity: 0;
+            }
+          }
+          .btn1{
+            position: absolute;
+            top: 39px;
+            right: -79px;
+            width: 110px;
+          }
+  
+          //btn2
+          .btn2-pos{
+            position: absolute;
+            top: 115px;
+            right: -7px;
+            width: 30px;
+            height: 30px;
+            .b2{
+              transform: rotate(-0deg);
+              width: 20px;
+              margin-left: 2px;
+              margin-top: -3px;
+              animation: flash 2s;
+              animation-delay: 2s;
+              transition: .5s;
+              opacity: 0;
+            }
+          }
+          .btn2{
+            position: absolute;
+            top: 110px;
+            right: -100px;
+            width: 115px;
+          }
+  
+          
+          //btn3
+          .btn3-pos{
+            position: absolute;
+            bottom: 115px;
+            right: 5px;
+            width: 30px;
+            height: 30px;
+            .b3{
+              transform: rotate(35deg);
+              width: 15px;
+              margin-left: -8px;
+              margin-top: 2px;
+              animation: flash 2s;
+              animation-delay: 2s;
+              transition: .5s;
+              opacity: 0;
+            }
+          }
+          .btn3{
+            position: absolute;
+            bottom: 81px;
+            right: -78px;
+            width: 110px;
+          }
+  
+          
+          //btn4
+          .btn4-pos{
+            position: absolute;
+            bottom: 115px;
+            left: -5px;
+            width: 30px;
+            height: 30px;
+            .b4{
+              transform: rotate(-215deg);
+              width: 15px;
+              margin-left: 1px;
+              margin-top: -1px;
+              animation: flash 2s;
+              animation-delay: 2s;
+              transition: .5s;
+              opacity: 0;
+            }
+          }
+          .btn4{
+            position: absolute;
+            bottom: 81px;
+            left: -90px;
+            width: 110px;
+          }
+  
+          
+          //btn5
+          .btn5-pos{
+            position: absolute;
+            top: 75px;
+            left: -5px;
+            width: 30px;
+            height: 30px;
+            .b5{
+              transform: rotate(215deg);
+              width: 15px;
+              margin-left: 2px;
+              margin-top: 2px;
+              animation: flash 2s;
+              animation-delay: 2s;
+              transition: .5s;
+              opacity: 0;
+            }
+          }
+          .btn5{
+            position: absolute;
+            top: 35px;
+            left: -91px;
+            width: 110px;
+          }
+        }
+      }
+      .countdown{
+        text-align: center;
+        margin-top: -50px;
+        #timer{
+          display: flex;
+          justify-content: center;
+          font-family: Digital-7;
+          font-size: 26px;
+          color: #DD0E36;
+          font-style: italic;
+          letter-spacing: 2px;
+          .dots{
+            margin: 0px 5px;
+          }
+        }
+      }
+    }
+  }
+  
+}

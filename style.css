@@ -1,0 +1,525 @@
+@font-face {
+  font-family: Digital-7;
+  src: url(assets/fonts/digital-7.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2e6fc5;
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+p {
+  margin: 0;
+  color: #747474;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  background: url(assets/images/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .main-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .main-wrapper .watch .watch-img {
+  background: url(assets/images/Watch.png);
+  width: 300px;
+  height: 400px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+main .main-wrapper .watch .watch-img .btn1-pos {
+  position: absolute;
+  top: 90px;
+  right: 55px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .main-wrapper .watch .watch-img .btn1-pos:hover + .btn1 {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+}
+
+main .main-wrapper .watch .watch-img .btn1-pos .b1 {
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  width: 20px;
+  margin-left: 5px;
+  margin-top: -2px;
+  -webkit-animation: flash 2s;
+          animation: flash 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+main .main-wrapper .watch .watch-img .btn1 {
+  position: absolute;
+  top: 10px;
+  right: -118px;
+  width: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main .main-wrapper .watch .watch-img .btn1:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+main .main-wrapper .watch .watch-img .btn2-pos {
+  position: absolute;
+  top: 150px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .main-wrapper .watch .watch-img .btn2-pos:hover + .btn2 {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+}
+
+main .main-wrapper .watch .watch-img .btn2-pos .b2 {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  width: 60px;
+  margin-left: -1px;
+  margin-top: -10px;
+  -webkit-animation: flash 2s;
+          animation: flash 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+main .main-wrapper .watch .watch-img .btn2 {
+  position: absolute;
+  top: 130px;
+  right: -160px;
+  width: 215px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main .main-wrapper .watch .watch-img .btn2:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+main .main-wrapper .watch .watch-img .btn3-pos {
+  position: absolute;
+  bottom: 155px;
+  right: 55px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .main-wrapper .watch .watch-img .btn3-pos:hover + .btn3 {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+}
+
+main .main-wrapper .watch .watch-img .btn3-pos .b3 {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  width: 20px;
+  margin-left: 5px;
+  margin-top: -0px;
+  -webkit-animation: flash 2s;
+          animation: flash 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+main .main-wrapper .watch .watch-img .btn3 {
+  position: absolute;
+  bottom: 80px;
+  right: -118px;
+  width: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main .main-wrapper .watch .watch-img .btn3:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+main .main-wrapper .watch .watch-img .btn4-pos {
+  position: absolute;
+  bottom: 155px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .main-wrapper .watch .watch-img .btn4-pos:hover + .btn4 {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+}
+
+main .main-wrapper .watch .watch-img .btn4-pos .b4 {
+  -webkit-transform: rotate(-215deg);
+          transform: rotate(-215deg);
+  width: 20px;
+  margin-left: -5px;
+  margin-top: -1px;
+  -webkit-animation: flash 2s;
+          animation: flash 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+main .main-wrapper .watch .watch-img .btn4 {
+  position: absolute;
+  bottom: 77px;
+  left: -138px;
+  width: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main .main-wrapper .watch .watch-img .btn4:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+main .main-wrapper .watch .watch-img .btn5-pos {
+  position: absolute;
+  top: 90px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .main-wrapper .watch .watch-img .btn5-pos:hover + .btn5 {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+}
+
+main .main-wrapper .watch .watch-img .btn5-pos .b5 {
+  -webkit-transform: rotate(215deg);
+          transform: rotate(215deg);
+  width: 20px;
+  margin-left: -5px;
+  margin-top: -1px;
+  -webkit-animation: flash 2s;
+          animation: flash 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+main .main-wrapper .watch .watch-img .btn5 {
+  position: absolute;
+  top: 5px;
+  left: -139px;
+  width: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main .main-wrapper .watch .watch-img .btn5:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+main .main-wrapper .countdown {
+  text-align: center;
+  margin-top: -30px;
+}
+
+main .main-wrapper .countdown #timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Digital-7;
+  font-size: 36px;
+  color: #DD0E36;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+main .main-wrapper .countdown #timer .dots {
+  margin: 0px 5px;
+}
+
+@-webkit-keyframes flash {
+  10%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  10%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  main {
+    overflow: hidden;
+  }
+  main .main-wrapper .watch .watch-img {
+    background: url(assets/images/Watch.png);
+    width: 150px;
+    height: 300px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin: 0;
+  }
+  main .main-wrapper .watch .watch-img .btn1-pos {
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  main .main-wrapper .watch .watch-img .btn1-pos .b1 {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+    width: 15px;
+    margin-left: 3px;
+    margin-top: 2px;
+    -webkit-animation: flash 2s;
+            animation: flash 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+  }
+  main .main-wrapper .watch .watch-img .btn1 {
+    position: absolute;
+    top: 39px;
+    right: -79px;
+    width: 110px;
+  }
+  main .main-wrapper .watch .watch-img .btn2-pos {
+    position: absolute;
+    top: 115px;
+    right: -7px;
+    width: 30px;
+    height: 30px;
+  }
+  main .main-wrapper .watch .watch-img .btn2-pos .b2 {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 20px;
+    margin-left: 2px;
+    margin-top: -3px;
+    -webkit-animation: flash 2s;
+            animation: flash 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+  }
+  main .main-wrapper .watch .watch-img .btn2 {
+    position: absolute;
+    top: 110px;
+    right: -100px;
+    width: 115px;
+  }
+  main .main-wrapper .watch .watch-img .btn3-pos {
+    position: absolute;
+    bottom: 115px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  main .main-wrapper .watch .watch-img .btn3-pos .b3 {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    width: 15px;
+    margin-left: -8px;
+    margin-top: 2px;
+    -webkit-animation: flash 2s;
+            animation: flash 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+  }
+  main .main-wrapper .watch .watch-img .btn3 {
+    position: absolute;
+    bottom: 81px;
+    right: -78px;
+    width: 110px;
+  }
+  main .main-wrapper .watch .watch-img .btn4-pos {
+    position: absolute;
+    bottom: 115px;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+  }
+  main .main-wrapper .watch .watch-img .btn4-pos .b4 {
+    -webkit-transform: rotate(-215deg);
+            transform: rotate(-215deg);
+    width: 15px;
+    margin-left: 1px;
+    margin-top: -1px;
+    -webkit-animation: flash 2s;
+            animation: flash 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+  }
+  main .main-wrapper .watch .watch-img .btn4 {
+    position: absolute;
+    bottom: 81px;
+    left: -90px;
+    width: 110px;
+  }
+  main .main-wrapper .watch .watch-img .btn5-pos {
+    position: absolute;
+    top: 75px;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+  }
+  main .main-wrapper .watch .watch-img .btn5-pos .b5 {
+    -webkit-transform: rotate(215deg);
+            transform: rotate(215deg);
+    width: 15px;
+    margin-left: 2px;
+    margin-top: 2px;
+    -webkit-animation: flash 2s;
+            animation: flash 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+  }
+  main .main-wrapper .watch .watch-img .btn5 {
+    position: absolute;
+    top: 35px;
+    left: -91px;
+    width: 110px;
+  }
+  main .main-wrapper .countdown {
+    text-align: center;
+    margin-top: -50px;
+  }
+  main .main-wrapper .countdown #timer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: Digital-7;
+    font-size: 26px;
+    color: #DD0E36;
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+  main .main-wrapper .countdown #timer .dots {
+    margin: 0px 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
